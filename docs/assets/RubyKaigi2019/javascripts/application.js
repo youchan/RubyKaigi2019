@@ -29750,7 +29750,7 @@ Opal.modules["slides/RubyKaigi2019/pages"] = function(Opal) {
   }
   var self = Opal.top, $nesting = [], nil = Opal.nil, $breaker = Opal.breaker, $slice = Opal.slice, $klass = Opal.klass, $send = Opal.send, $hash2 = Opal.hash2, $writer = nil;
 
-  Opal.add_stubs(['$h1', '$tap', '$<<', '$p', '$img', '$assets_path', '$h2', '$ul', '$li', '$page_count=', '$-', '$title=']);
+  Opal.add_stubs(['$h1', '$tap', '$<<', '$p', '$img', '$assets_path', '$h2', '$ul', '$li', '$strong', '$code', '$page_count=', '$-', '$title=']);
   
   (function($base, $super, $parent_nesting) {
     function $Page0(){};
@@ -29794,7 +29794,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_5 = function(children){var self = TMP_5.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Yoh Osaki (@youchan)"), self.$li(nil, "RubyKaigi speaker. (2015 -)"), self.$li(nil, "Retrieva, Inc.")))}, TMP_5.$$s = self, TMP_5.$$arity = 1, TMP_5))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Yoh Osaki (@youchan)"), self.$li(nil, "RubyKaigi speaker (2015 -)"), self.$li(nil, "Retrieva, Inc."), self.$ul(nil, self.$li(nil, "Application developer"))))}, TMP_5.$$s = self, TMP_5.$$arity = 1, TMP_5))
     }, TMP_Page1_content_6.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29808,14 +29808,14 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page2_header_7 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "My job")
+      return self.$h2(nil, "Sponsored by Retrieva, Inc.")
     }, TMP_Page2_header_7.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page2_content_9 = function $$content() {
       var TMP_8, self = this;
 
       return $send([], 'tap', [], (TMP_8 = function(children){var self = TMP_8.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "1年前にRetrievaに転職"), self.$ul(nil, self.$li(nil, "機械学習の盛りあがり"), self.$li(nil, "自然言語処理が面白そう")), self.$li(nil, "アプリケーション開発エンジニア")))}, TMP_8.$$s = self, TMP_8.$$arity = 1, TMP_8))
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_8.$$s = self, TMP_8.$$arity = 1, TMP_8))
     }, TMP_Page2_content_9.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29836,7 +29836,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_11 = function(children){var self = TMP_11.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "自然言語処理が面白いのでRubyで出来たらうれしい")))}, TMP_11.$$s = self, TMP_11.$$arity = 1, TMP_11))
+      return children['$<<'](self.$ul(nil, self.$li(nil, "I am glad to develop NLP by ruby, because")))}, TMP_11.$$s = self, TMP_11.$$arity = 1, TMP_11))
     }, TMP_Page3_content_12.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29871,43 +29871,46 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_16 = function(children){var self = TMP_16.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Are japanese web developpers thinking that NLP is MeCab?"))}, TMP_16.$$s = self, TMP_16.$$arity = 1, TMP_16))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Are japanese web developers thinking that NLP is MeCab?"))}, TMP_16.$$s = self, TMP_16.$$arity = 1, TMP_16))
     }, TMP_Page5_content_17.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page6(){};
     var self = $Page6 = $klass($base, $super, 'Page6', $Page6);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page6_content_19;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page6_header_18, TMP_Page6_content_20;
 
-    return (Opal.defn(self, '$content', TMP_Page6_content_19 = function $$content() {
-      var TMP_18, self = this;
+    
+    
+    Opal.defn(self, '$header', TMP_Page6_header_18 = function $$header() {
+      var self = this;
 
-      return $send([], 'tap', [], (TMP_18 = function(children){var self = TMP_18.$$s || this;
+      return self.$h2(nil, "Someday at a self-published book fes.")
+    }, TMP_Page6_header_18.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page6_content_20 = function $$content() {
+      var TMP_19, self = this;
+
+      return $send([], 'tap', [], (TMP_19 = function(children){var self = TMP_19.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "いろいろなNLP"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_18.$$s = self, TMP_18.$$arity = 1, TMP_18))
-    }, TMP_Page6_content_19.$$arity = 0), nil) && 'content'
+      
+        children['$<<'](self.$p(nil, self.$strong(nil, "me"), ": This book is writen about NLP programming in Ruby."));
+        children['$<<'](self.$p(nil, self.$strong(nil, "customer"), ": Oh, NLP? It's  MeCab?"));
+        return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/neko.png"}), ""))));}, TMP_19.$$s = self, TMP_19.$$arity = 1, TMP_19))
+    }, TMP_Page6_content_20.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page7(){};
     var self = $Page7 = $klass($base, $super, 'Page7', $Page7);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page7_header_20, TMP_Page7_content_22;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page7_content_22;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page7_header_20 = function $$header() {
-      var self = this;
-
-      return self.$h2(nil, "Two trends of NLP")
-    }, TMP_Page7_header_20.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page7_content_22 = function $$content() {
       var TMP_21, self = this;
 
       return $send([], 'tap', [], (TMP_21 = function(children){var self = TMP_21.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Analytical approaches"), self.$ul(nil, self.$li(nil, "Parsing"), self.$li(nil, "Classical")), self.$li(nil, "Deep learning"), self.$ul(nil, self.$li(nil, "End-to-end"))))}, TMP_21.$$s = self, TMP_21.$$arity = 1, TMP_21))
-    }, TMP_Page7_content_22.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "いろいろなNLP"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_21.$$s = self, TMP_21.$$arity = 1, TMP_21))
+    }, TMP_Page7_content_22.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page8(){};
@@ -29920,7 +29923,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_23 = function(children){var self = TMP_23.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "NLP is analysis of token series."))}, TMP_23.$$s = self, TMP_23.$$arity = 1, TMP_23))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "huge"}), "What is NLP?"))}, TMP_23.$$s = self, TMP_23.$$arity = 1, TMP_23))
     }, TMP_Page8_content_24.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29934,14 +29937,16 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page9_header_25 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Tokenizing")
+      return self.$h2(nil, "Two trends of NLP")
     }, TMP_Page9_header_25.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page9_content_27 = function $$content() {
       var TMP_26, self = this;
 
       return $send([], 'tap', [], (TMP_26 = function(children){var self = TMP_26.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Tokenizing japanese sentences needs morphological analysis."))}, TMP_26.$$s = self, TMP_26.$$arity = 1, TMP_26))
+      
+        children['$<<'](self.$ul(nil, self.$li(nil, "Analytical approaches"), self.$ul(nil, self.$li(nil, "Parsing"), self.$li(nil, "Classical")), self.$li(nil, "Deep learning"), self.$ul(nil, self.$li(nil, "End-to-end"))));
+        return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- 図にしても良いかも -->\n"})})));}, TMP_26.$$s = self, TMP_26.$$arity = 1, TMP_26))
     }, TMP_Page9_content_27.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29955,7 +29960,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_28 = function(children){var self = TMP_28.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "日本語のトークナイズ"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_28.$$s = self, TMP_28.$$arity = 1, TMP_28))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "NLP is analysis of token series."))}, TMP_28.$$s = self, TMP_28.$$arity = 1, TMP_28))
     }, TMP_Page10_content_29.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29969,7 +29974,7 @@ if (children == null) children = nil;
 
       return $send([], 'tap', [], (TMP_30 = function(children){var self = TMP_30.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Language Model"))}, TMP_30.$$s = self, TMP_30.$$arity = 1, TMP_30))
+      return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- トークンを解析するイメージの絵 -->\n"})})))}, TMP_30.$$s = self, TMP_30.$$arity = 1, TMP_30))
     }, TMP_Page11_content_31.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
@@ -29983,561 +29988,689 @@ if (children == null) children = nil;
     Opal.defn(self, '$header', TMP_Page12_header_32 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Language Model")
+      return self.$h2(nil, "Tokenizing")
     }, TMP_Page12_header_32.$$arity = 0);
     return (Opal.defn(self, '$content', TMP_Page12_content_34 = function $$content() {
       var TMP_33, self = this;
 
       return $send([], 'tap', [], (TMP_33 = function(children){var self = TMP_33.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Probabilistic approach"), self.$ul(nil, self.$li(nil, "Occurence probability"), self.$li(nil, "Likelyhood")), self.$li(nil, "Imagining predictive transformations make it easy understanding.")))}, TMP_33.$$s = self, TMP_33.$$arity = 1, TMP_33))
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Tokenizing japanese sentences needs morphological analysis."))}, TMP_33.$$s = self, TMP_33.$$arity = 1, TMP_33))
     }, TMP_Page12_content_34.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page13(){};
     var self = $Page13 = $klass($base, $super, 'Page13', $Page13);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page13_header_35, TMP_Page13_content_37;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page13_content_36;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page13_header_35 = function $$header() {
-      var self = this;
+    return (Opal.defn(self, '$content', TMP_Page13_content_36 = function $$content() {
+      var TMP_35, self = this;
 
-      return self.$h2(nil, "Simple Language Model")
-    }, TMP_Page13_header_35.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page13_content_37 = function $$content() {
-      var TMP_36, self = this;
-
-      return $send([], 'tap', [], (TMP_36 = function(children){var self = TMP_36.$$s || this;
+      return $send([], 'tap', [], (TMP_35 = function(children){var self = TMP_35.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Markov property"), self.$li(nil, "n-gram language model")))}, TMP_36.$$s = self, TMP_36.$$arity = 1, TMP_36))
-    }, TMP_Page13_content_37.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "日本語のトークナイズ"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_35.$$s = self, TMP_35.$$arity = 1, TMP_35))
+    }, TMP_Page13_content_36.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page14(){};
     var self = $Page14 = $klass($base, $super, 'Page14', $Page14);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page14_header_38, TMP_Page14_content_40;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page14_content_38;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page14_header_38 = function $$header() {
-      var self = this;
+    return (Opal.defn(self, '$content', TMP_Page14_content_38 = function $$content() {
+      var TMP_37, self = this;
 
-      return self.$h2(nil, "Markov property")
-    }, TMP_Page14_header_38.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page14_content_40 = function $$content() {
-      var TMP_39, self = this;
-
-      return $send([], 'tap', [], (TMP_39 = function(children){var self = TMP_39.$$s || this;
+      return $send([], 'tap', [], (TMP_37 = function(children){var self = TMP_37.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$p(nil, "The current state is depending on only the last state."));
-        return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "Markov property"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))));}, TMP_39.$$s = self, TMP_39.$$arity = 1, TMP_39))
-    }, TMP_Page14_content_40.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Language Model"))}, TMP_37.$$s = self, TMP_37.$$arity = 1, TMP_37))
+    }, TMP_Page14_content_38.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page15(){};
     var self = $Page15 = $klass($base, $super, 'Page15', $Page15);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page15_header_41, TMP_Page15_content_43;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page15_header_39, TMP_Page15_content_41;
 
     
     
-    Opal.defn(self, '$header', TMP_Page15_header_41 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page15_header_39 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "n-gram language model")
-    }, TMP_Page15_header_41.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page15_content_43 = function $$content() {
-      var TMP_42, self = this;
+      return self.$h2(nil, "Language Model")
+    }, TMP_Page15_header_39.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page15_content_41 = function $$content() {
+      var TMP_40, self = this;
 
-      return $send([], 'tap', [], (TMP_42 = function(children){var self = TMP_42.$$s || this;
+      return $send([], 'tap', [], (TMP_40 = function(children){var self = TMP_40.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "n-gram language model"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_42.$$s = self, TMP_42.$$arity = 1, TMP_42))
-    }, TMP_Page15_content_43.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Probabilistic approach"), self.$ul(nil, self.$li(nil, "Occurence probability"), self.$li(nil, "Likelyhood")), self.$li(nil, "Imagining predictive transformations make it easy understanding.")))}, TMP_40.$$s = self, TMP_40.$$arity = 1, TMP_40))
+    }, TMP_Page15_content_41.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page16(){};
     var self = $Page16 = $klass($base, $super, 'Page16', $Page16);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page16_header_44, TMP_Page16_content_46;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page16_content_43;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page16_header_44 = function $$header() {
-      var self = this;
+    return (Opal.defn(self, '$content', TMP_Page16_content_43 = function $$content() {
+      var TMP_42, self = this;
 
-      return self.$h2(nil, "Language models other than n-gram")
-    }, TMP_Page16_header_44.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page16_content_46 = function $$content() {
-      var TMP_45, self = this;
-
-      return $send([], 'tap', [], (TMP_45 = function(children){var self = TMP_45.$$s || this;
+      return $send([], 'tap', [], (TMP_42 = function(children){var self = TMP_42.$$s || this;
 if (children == null) children = nil;
-      
-        children['$<<'](self.$ul(nil, self.$li(nil, "HMM(Hidden markov mdoel)"), self.$ul(nil, self.$li(nil, "CRF"), self.$li(nil, "Used in MeCab")), self.$li(nil, "Neural network")));
-        return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "HMM"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))));}, TMP_45.$$s = self, TMP_45.$$arity = 1, TMP_45))
-    }, TMP_Page16_content_46.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "予測変換を例にして言語モデルを説明する図"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_42.$$s = self, TMP_42.$$arity = 1, TMP_42))
+    }, TMP_Page16_content_43.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page17(){};
     var self = $Page17 = $klass($base, $super, 'Page17', $Page17);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page17_header_47, TMP_Page17_content_49;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page17_header_44, TMP_Page17_content_46;
 
     
     
-    Opal.defn(self, '$header', TMP_Page17_header_47 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page17_header_44 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Neural Network")
-    }, TMP_Page17_header_47.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page17_content_49 = function $$content() {
-      var TMP_48, self = this;
+      return self.$h2(nil, "Simple Language Model")
+    }, TMP_Page17_header_44.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page17_content_46 = function $$content() {
+      var TMP_45, self = this;
 
-      return $send([], 'tap', [], (TMP_48 = function(children){var self = TMP_48.$$s || this;
+      return $send([], 'tap', [], (TMP_45 = function(children){var self = TMP_45.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "How to treat sequences by Neural network?"), self.$ul(nil, self.$li(nil, "The answer is RNN(Recurent neural network).")), self.$li(nil, "How to treat word vector in Neural network?"), self.$ul(nil, self.$li(nil, "The answer is word embedding."))))}, TMP_48.$$s = self, TMP_48.$$arity = 1, TMP_48))
-    }, TMP_Page17_content_49.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Markov property"), self.$li(nil, "n-gram language model")))}, TMP_45.$$s = self, TMP_45.$$arity = 1, TMP_45))
+    }, TMP_Page17_content_46.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page18(){};
     var self = $Page18 = $klass($base, $super, 'Page18', $Page18);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page18_header_50, TMP_Page18_content_52;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page18_header_47, TMP_Page18_content_49;
 
     
     
-    Opal.defn(self, '$header', TMP_Page18_header_50 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page18_header_47 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Word embedding")
-    }, TMP_Page18_header_50.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page18_content_52 = function $$content() {
-      var TMP_51, self = this;
+      return self.$h2(nil, "Markov property")
+    }, TMP_Page18_header_47.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page18_content_49 = function $$content() {
+      var TMP_48, self = this;
 
-      return $send([], 'tap', [], (TMP_51 = function(children){var self = TMP_51.$$s || this;
+      return $send([], 'tap', [], (TMP_48 = function(children){var self = TMP_48.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Word2vec is a typical method"), self.$li(nil, "It need n-dimension vector for n amount of vocabraries without word embeddings.")))}, TMP_51.$$s = self, TMP_51.$$arity = 1, TMP_51))
-    }, TMP_Page18_content_52.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$p(nil, "The current state is depending on only the last state."));
+        return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "Markov property"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))));}, TMP_48.$$s = self, TMP_48.$$arity = 1, TMP_48))
+    }, TMP_Page18_content_49.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page19(){};
     var self = $Page19 = $klass($base, $super, 'Page19', $Page19);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page19_header_53, TMP_Page19_content_55;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page19_header_50, TMP_Page19_content_52;
 
     
     
-    Opal.defn(self, '$header', TMP_Page19_header_53 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page19_header_50 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "one-hot vector")
-    }, TMP_Page19_header_53.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page19_content_55 = function $$content() {
-      var TMP_54, self = this;
+      return self.$h2(nil, "n-gram language model")
+    }, TMP_Page19_header_50.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page19_content_52 = function $$content() {
+      var TMP_51, self = this;
 
-      return $send([], 'tap', [], (TMP_54 = function(children){var self = TMP_54.$$s || this;
+      return $send([], 'tap', [], (TMP_51 = function(children){var self = TMP_51.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "one-hot vector"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_54.$$s = self, TMP_54.$$arity = 1, TMP_54))
-    }, TMP_Page19_content_55.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "n-gram language model"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_51.$$s = self, TMP_51.$$arity = 1, TMP_51))
+    }, TMP_Page19_content_52.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page20(){};
     var self = $Page20 = $klass($base, $super, 'Page20', $Page20);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page20_header_56, TMP_Page20_content_58;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page20_header_53, TMP_Page20_content_55;
 
     
     
-    Opal.defn(self, '$header', TMP_Page20_header_56 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page20_header_53 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "word2vec")
-    }, TMP_Page20_header_56.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page20_content_58 = function $$content() {
-      var TMP_57, self = this;
+      return self.$h2(nil, "Language models other than n-gram")
+    }, TMP_Page20_header_53.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page20_content_55 = function $$content() {
+      var TMP_54, self = this;
 
-      return $send([], 'tap', [], (TMP_57 = function(children){var self = TMP_57.$$s || this;
+      return $send([], 'tap', [], (TMP_54 = function(children){var self = TMP_54.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "word2vec"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_57.$$s = self, TMP_57.$$arity = 1, TMP_57))
-    }, TMP_Page20_content_58.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$ul(nil, self.$li(nil, "HMM(Hidden markov mdoel)"), self.$ul(nil, self.$li(nil, "CRF"), self.$li(nil, "Used in MeCab")), self.$li(nil, "Neural network")));
+        return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "HMM"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))));}, TMP_54.$$s = self, TMP_54.$$arity = 1, TMP_54))
+    }, TMP_Page20_content_55.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page21(){};
     var self = $Page21 = $klass($base, $super, 'Page21', $Page21);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page21_header_59, TMP_Page21_content_61;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page21_header_56, TMP_Page21_content_58;
 
     
     
-    Opal.defn(self, '$header', TMP_Page21_header_59 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page21_header_56 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Recurent neural network (RNN)")
-    }, TMP_Page21_header_59.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page21_content_61 = function $$content() {
-      var TMP_60, self = this;
+      return self.$h2(nil, "Neural Network")
+    }, TMP_Page21_header_56.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page21_content_58 = function $$content() {
+      var TMP_57, self = this;
 
-      return $send([], 'tap', [], (TMP_60 = function(children){var self = TMP_60.$$s || this;
+      return $send([], 'tap', [], (TMP_57 = function(children){var self = TMP_57.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "RNN"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_60.$$s = self, TMP_60.$$arity = 1, TMP_60))
-    }, TMP_Page21_content_61.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "How to express the sequences by Neural network?"), self.$ul(nil, self.$li(nil, "The answer is RNN(Recurent neural network).")), self.$li(nil, "How to treat word vector in Neural network?"), self.$ul(nil, self.$li(nil, "The answer is word embedding."))))}, TMP_57.$$s = self, TMP_57.$$arity = 1, TMP_57))
+    }, TMP_Page21_content_58.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page22(){};
     var self = $Page22 = $klass($base, $super, 'Page22', $Page22);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page22_header_62, TMP_Page22_content_64;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page22_header_59, TMP_Page22_content_61;
 
     
     
-    Opal.defn(self, '$header', TMP_Page22_header_62 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page22_header_59 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Long short term memory (LSTM)")
-    }, TMP_Page22_header_62.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page22_content_64 = function $$content() {
-      var TMP_63, self = this;
+      return self.$h2(nil, "Word embedding")
+    }, TMP_Page22_header_59.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page22_content_61 = function $$content() {
+      var TMP_60, self = this;
 
-      return $send([], 'tap', [], (TMP_63 = function(children){var self = TMP_63.$$s || this;
+      return $send([], 'tap', [], (TMP_60 = function(children){var self = TMP_60.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "LSTM"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_63.$$s = self, TMP_63.$$arity = 1, TMP_63))
-    }, TMP_Page22_content_64.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Word2vec is a typical method"), self.$li(nil, "It need n-dimension vector for n amount of vocabraries without word embeddings.")))}, TMP_60.$$s = self, TMP_60.$$arity = 1, TMP_60))
+    }, TMP_Page22_content_61.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page23(){};
     var self = $Page23 = $klass($base, $super, 'Page23', $Page23);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page23_header_65, TMP_Page23_content_67;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page23_header_62, TMP_Page23_content_64;
 
     
     
-    Opal.defn(self, '$header', TMP_Page23_header_65 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page23_header_62 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Use of Language Model")
-    }, TMP_Page23_header_65.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page23_content_67 = function $$content() {
-      var TMP_66, self = this;
+      return self.$h2(nil, "one-hot vector")
+    }, TMP_Page23_header_62.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page23_content_64 = function $$content() {
+      var TMP_63, self = this;
 
-      return $send([], 'tap', [], (TMP_66 = function(children){var self = TMP_66.$$s || this;
+      return $send([], 'tap', [], (TMP_63 = function(children){var self = TMP_63.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, ""), self.$li(nil, "encoder-decoder")))}, TMP_66.$$s = self, TMP_66.$$arity = 1, TMP_66))
-    }, TMP_Page23_content_67.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "large"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/one-hot-vector.png"}), ""))))}, TMP_63.$$s = self, TMP_63.$$arity = 1, TMP_63))
+    }, TMP_Page23_content_64.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page24(){};
     var self = $Page24 = $klass($base, $super, 'Page24', $Page24);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page24_header_68, TMP_Page24_content_70;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page24_header_65, TMP_Page24_content_67;
 
     
     
-    Opal.defn(self, '$header', TMP_Page24_header_68 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page24_header_65 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Where latest NLP are using")
-    }, TMP_Page24_header_68.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page24_content_70 = function $$content() {
-      var TMP_69, self = this;
+      return self.$h2(nil, "word embedding")
+    }, TMP_Page24_header_65.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page24_content_67 = function $$content() {
+      var TMP_66, self = this;
 
-      return $send([], 'tap', [], (TMP_69 = function(children){var self = TMP_69.$$s || this;
+      return $send([], 'tap', [], (TMP_66 = function(children){var self = TMP_66.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Neural Machine Translation"), self.$li(nil, "Question Answering(Smart speaker, chat bot)"), self.$li(nil, "Information Retrieval"), self.$li(nil, "BART")))}, TMP_69.$$s = self, TMP_69.$$arity = 1, TMP_69))
-    }, TMP_Page24_content_70.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "次元圧縮のはなし"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))));
+        return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- ニューラルネットワークとは行列演算がほとんど -->\n"})})));}, TMP_66.$$s = self, TMP_66.$$arity = 1, TMP_66))
+    }, TMP_Page24_content_67.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page25(){};
     var self = $Page25 = $klass($base, $super, 'Page25', $Page25);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page25_header_71, TMP_Page25_content_73;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page25_header_68, TMP_Page25_content_70;
 
     
     
-    Opal.defn(self, '$header', TMP_Page25_header_71 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page25_header_68 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Neural machine translation")
-    }, TMP_Page25_header_71.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page25_content_73 = function $$content() {
-      var TMP_72, self = this;
+      return self.$h2(nil, "word2vec")
+    }, TMP_Page25_header_68.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page25_content_70 = function $$content() {
+      var TMP_69, self = this;
 
-      return $send([], 'tap', [], (TMP_72 = function(children){var self = TMP_72.$$s || this;
+      return $send([], 'tap', [], (TMP_69 = function(children){var self = TMP_69.$$s || this;
 if (children == null) children = nil;
-      return nil}, TMP_72.$$s = self, TMP_72.$$arity = 1, TMP_72))
-    }, TMP_Page25_content_73.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "word2vec"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_69.$$s = self, TMP_69.$$arity = 1, TMP_69))
+    }, TMP_Page25_content_70.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page26(){};
     var self = $Page26 = $klass($base, $super, 'Page26', $Page26);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page26_header_74, TMP_Page26_content_76;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page26_header_71, TMP_Page26_content_73;
 
     
     
-    Opal.defn(self, '$header', TMP_Page26_header_74 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page26_header_71 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "BART")
-    }, TMP_Page26_header_74.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page26_content_76 = function $$content() {
-      var TMP_75, self = this;
+      return self.$h2(nil, "Recurent neural network (RNN)")
+    }, TMP_Page26_header_71.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page26_content_73 = function $$content() {
+      var TMP_72, self = this;
 
-      return $send([], 'tap', [], (TMP_75 = function(children){var self = TMP_75.$$s || this;
+      return $send([], 'tap', [], (TMP_72 = function(children){var self = TMP_72.$$s || this;
 if (children == null) children = nil;
-      return nil}, TMP_75.$$s = self, TMP_75.$$arity = 1, TMP_75))
-    }, TMP_Page26_content_76.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "RNN"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))));
+        return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- RNNはn-gramのニューラルネットワーク版みたいなもの -->\n"})})));}, TMP_72.$$s = self, TMP_72.$$arity = 1, TMP_72))
+    }, TMP_Page26_content_73.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page27(){};
     var self = $Page27 = $klass($base, $super, 'Page27', $Page27);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page27_content_78;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page27_header_74, TMP_Page27_content_76;
 
-    return (Opal.defn(self, '$content', TMP_Page27_content_78 = function $$content() {
-      var TMP_77, self = this;
+    
+    
+    Opal.defn(self, '$header', TMP_Page27_header_74 = function $$header() {
+      var self = this;
 
-      return $send([], 'tap', [], (TMP_77 = function(children){var self = TMP_77.$$s || this;
+      return self.$h2(nil, "Long short term memory (LSTM)")
+    }, TMP_Page27_header_74.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page27_content_76 = function $$content() {
+      var TMP_75, self = this;
+
+      return $send([], 'tap', [], (TMP_75 = function(children){var self = TMP_75.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Ruby for NLP"))}, TMP_77.$$s = self, TMP_77.$$arity = 1, TMP_77))
-    }, TMP_Page27_content_78.$$arity = 0), nil) && 'content'
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": "LSTM"}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_75.$$s = self, TMP_75.$$arity = 1, TMP_75))
+    }, TMP_Page27_content_76.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page28(){};
     var self = $Page28 = $klass($base, $super, 'Page28', $Page28);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page28_header_79, TMP_Page28_content_81;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page28_header_77, TMP_Page28_content_79;
 
     
     
-    Opal.defn(self, '$header', TMP_Page28_header_79 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page28_header_77 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Ruby for NLP")
-    }, TMP_Page28_header_79.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page28_content_81 = function $$content() {
-      var TMP_80, self = this;
+      return self.$h2(nil, "Use of Language Model")
+    }, TMP_Page28_header_77.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page28_content_79 = function $$content() {
+      var TMP_78, self = this;
 
-      return $send([], 'tap', [], (TMP_80 = function(children){var self = TMP_80.$$s || this;
+      return $send([], 'tap', [], (TMP_78 = function(children){var self = TMP_78.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Morphological analysis"), self.$li(nil, "Language Model"), self.$li(nil, "Parsing"), self.$li(nil, "Corpus"), self.$li(nil, "Neural Network(Deep learning)"), self.$ul(nil, self.$li(nil, "word2vec"), self.$li(nil, "LSTM"))))}, TMP_80.$$s = self, TMP_80.$$arity = 1, TMP_80))
-    }, TMP_Page28_content_81.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "encoder-decoder")))}, TMP_78.$$s = self, TMP_78.$$arity = 1, TMP_78))
+    }, TMP_Page28_content_79.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page29(){};
     var self = $Page29 = $klass($base, $super, 'Page29', $Page29);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page29_header_82, TMP_Page29_content_84;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page29_header_80, TMP_Page29_content_82;
 
     
     
-    Opal.defn(self, '$header', TMP_Page29_header_82 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page29_header_80 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Morphological analysis")
-    }, TMP_Page29_header_82.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page29_content_84 = function $$content() {
-      var TMP_83, self = this;
+      return self.$h2(nil, "Where latest NLP are using")
+    }, TMP_Page29_header_80.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page29_content_82 = function $$content() {
+      var TMP_81, self = this;
 
-      return $send([], 'tap', [], (TMP_83 = function(children){var self = TMP_83.$$s || this;
+      return $send([], 'tap', [], (TMP_81 = function(children){var self = TMP_81.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Natto(MeCab)"), self.$li(nil, "jumanpp_ruby(Juman)")))}, TMP_83.$$s = self, TMP_83.$$arity = 1, TMP_83))
-    }, TMP_Page29_content_84.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Neural Machine Translation"), self.$li(nil, "Question Answering(Smart speaker, chat bot)"), self.$li(nil, "Information Retrieval"), self.$li(nil, "BART")))}, TMP_81.$$s = self, TMP_81.$$arity = 1, TMP_81))
+    }, TMP_Page29_content_82.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page30(){};
     var self = $Page30 = $klass($base, $super, 'Page30', $Page30);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page30_header_85, TMP_Page30_content_87;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page30_header_83, TMP_Page30_content_85;
 
     
     
-    Opal.defn(self, '$header', TMP_Page30_header_85 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page30_header_83 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Parsing")
-    }, TMP_Page30_header_85.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page30_content_87 = function $$content() {
-      var TMP_86, self = this;
+      return self.$h2(nil, "Neural machine translation")
+    }, TMP_Page30_header_83.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page30_content_85 = function $$content() {
+      var TMP_84, self = this;
 
-      return $send([], 'tap', [], (TMP_86 = function(children){var self = TMP_86.$$s || this;
+      return $send([], 'tap', [], (TMP_84 = function(children){var self = TMP_84.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Stanford NLP"), self.$li(nil, "treat"), self.$li(nil, "juman_knp(KNP)")))}, TMP_86.$$s = self, TMP_86.$$arity = 1, TMP_86))
-    }, TMP_Page30_content_87.$$arity = 0), nil) && 'content';
+      return nil}, TMP_84.$$s = self, TMP_84.$$arity = 1, TMP_84))
+    }, TMP_Page30_content_85.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page31(){};
     var self = $Page31 = $klass($base, $super, 'Page31', $Page31);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page31_header_88, TMP_Page31_content_90;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page31_header_86, TMP_Page31_content_88;
 
     
     
-    Opal.defn(self, '$header', TMP_Page31_header_88 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page31_header_86 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Neural network")
-    }, TMP_Page31_header_88.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page31_content_90 = function $$content() {
-      var TMP_89, self = this;
+      return self.$h2(nil, "BART")
+    }, TMP_Page31_header_86.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page31_content_88 = function $$content() {
+      var TMP_87, self = this;
 
-      return $send([], 'tap', [], (TMP_89 = function(children){var self = TMP_89.$$s || this;
+      return $send([], 'tap', [], (TMP_87 = function(children){var self = TMP_87.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "Tensor Flow"), self.$li(nil, "MXNet"), self.$li(nil, "Red Chainer")))}, TMP_89.$$s = self, TMP_89.$$arity = 1, TMP_89))
-    }, TMP_Page31_content_90.$$arity = 0), nil) && 'content';
+      return nil}, TMP_87.$$s = self, TMP_87.$$arity = 1, TMP_87))
+    }, TMP_Page31_content_88.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page32(){};
     var self = $Page32 = $klass($base, $super, 'Page32', $Page32);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page32_header_91, TMP_Page32_content_93;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page32_content_90;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page32_header_91 = function $$header() {
-      var self = this;
+    return (Opal.defn(self, '$content', TMP_Page32_content_90 = function $$content() {
+      var TMP_89, self = this;
 
-      return self.$h2(nil, "bindings")
-    }, TMP_Page32_header_91.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page32_content_93 = function $$content() {
-      var TMP_92, self = this;
-
-      return $send([], 'tap', [], (TMP_92 = function(children){var self = TMP_92.$$s || this;
+      return $send([], 'tap', [], (TMP_89 = function(children){var self = TMP_89.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "実際のアルゴリズムを使うときにはbindingを使うのがよさそうという話")))}, TMP_92.$$s = self, TMP_92.$$arity = 1, TMP_92))
-    }, TMP_Page32_content_93.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$p($hash2(["className"], {"className": "large"}), "Ruby for NLP"))}, TMP_89.$$s = self, TMP_89.$$arity = 1, TMP_89))
+    }, TMP_Page32_content_90.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page33(){};
     var self = $Page33 = $klass($base, $super, 'Page33', $Page33);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page33_header_94, TMP_Page33_content_96;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page33_header_91, TMP_Page33_content_93;
 
     
     
-    Opal.defn(self, '$header', TMP_Page33_header_94 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page33_header_91 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Red Data Tools")
-    }, TMP_Page33_header_94.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page33_content_96 = function $$content() {
-      var TMP_95, self = this;
+      return self.$h2(nil, "Ruby for NLP")
+    }, TMP_Page33_header_91.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page33_content_93 = function $$content() {
+      var TMP_92, self = this;
 
-      return $send([], 'tap', [], (TMP_95 = function(children){var self = TMP_95.$$s || this;
+      return $send([], 'tap', [], (TMP_92 = function(children){var self = TMP_92.$$s || this;
 if (children == null) children = nil;
-      return nil}, TMP_95.$$s = self, TMP_95.$$arity = 1, TMP_95))
-    }, TMP_Page33_content_96.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Morphological analysis"), self.$li(nil, "Language Model"), self.$li(nil, "Parsing"), self.$li(nil, "Corpus"), self.$li(nil, "Neural Network(Deep learning)"), self.$ul(nil, self.$li(nil, "word2vec"), self.$li(nil, "LSTM"))))}, TMP_92.$$s = self, TMP_92.$$arity = 1, TMP_92))
+    }, TMP_Page33_content_93.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page34(){};
     var self = $Page34 = $klass($base, $super, 'Page34', $Page34);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page34_header_97, TMP_Page34_content_99;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page34_header_94, TMP_Page34_content_96;
 
     
     
-    Opal.defn(self, '$header', TMP_Page34_header_97 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page34_header_94 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Red Datasets")
-    }, TMP_Page34_header_97.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page34_content_99 = function $$content() {
-      var TMP_98, self = this;
+      return self.$h2(nil, "Morphological analysis")
+    }, TMP_Page34_header_94.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page34_content_96 = function $$content() {
+      var TMP_95, self = this;
 
-      return $send([], 'tap', [], (TMP_98 = function(children){var self = TMP_98.$$s || this;
+      return $send([], 'tap', [], (TMP_95 = function(children){var self = TMP_95.$$s || this;
 if (children == null) children = nil;
-      return nil}, TMP_98.$$s = self, TMP_98.$$arity = 1, TMP_98))
-    }, TMP_Page34_content_99.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Natto(MeCab)"), self.$li(nil, "jumanpp_ruby(Juman)")))}, TMP_95.$$s = self, TMP_95.$$arity = 1, TMP_95))
+    }, TMP_Page34_content_96.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page35(){};
     var self = $Page35 = $klass($base, $super, 'Page35', $Page35);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page35_header_100, TMP_Page35_content_102;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page35_content_98;
 
-    
-    
-    Opal.defn(self, '$header', TMP_Page35_header_100 = function $$header() {
-      var self = this;
+    return (Opal.defn(self, '$content', TMP_Page35_content_98 = function $$content() {
+      var TMP_97, self = this;
 
-      return self.$h2(nil, "Red Chainer")
-    }, TMP_Page35_header_100.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page35_content_102 = function $$content() {
-      var TMP_101, self = this;
-
-      return $send([], 'tap', [], (TMP_101 = function(children){var self = TMP_101.$$s || this;
+      return $send([], 'tap', [], (TMP_97 = function(children){var self = TMP_97.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "3日目に@sonotsと@hatappiで発表がある")))}, TMP_101.$$s = self, TMP_101.$$arity = 1, TMP_101))
-    }, TMP_Page35_content_102.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$p($hash2(["className"], {"className": "huge"}), "Demo"));
+        children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- Nattoでデモ -->\n"})})));
+        return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- 出来たらJuman++でもデモ -->\n"})})));}, TMP_97.$$s = self, TMP_97.$$arity = 1, TMP_97))
+    }, TMP_Page35_content_98.$$arity = 0), nil) && 'content'
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page36(){};
     var self = $Page36 = $klass($base, $super, 'Page36', $Page36);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page36_header_103, TMP_Page36_content_105;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page36_header_99, TMP_Page36_content_101;
 
     
     
-    Opal.defn(self, '$header', TMP_Page36_header_103 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page36_header_99 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Demo")
-    }, TMP_Page36_header_103.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page36_content_105 = function $$content() {
-      var TMP_104, self = this;
+      return self.$h2(nil, "Parsing")
+    }, TMP_Page36_header_99.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page36_content_101 = function $$content() {
+      var TMP_100, self = this;
 
-      return $send([], 'tap', [], (TMP_104 = function(children){var self = TMP_104.$$s || this;
+      return $send([], 'tap', [], (TMP_100 = function(children){var self = TMP_100.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/demo.png"}), ""))))}, TMP_104.$$s = self, TMP_104.$$arity = 1, TMP_104))
-    }, TMP_Page36_content_105.$$arity = 0), nil) && 'content';
+      
+        children['$<<'](self.$ul(nil, self.$li(nil, "Stanford NLP"), self.$li(nil, "treat"), self.$li(nil, "juman_knp(KNP)")));
+        return children['$<<'](self.$code($hash2(["dangerouslySetInnerHTML"], {"dangerouslySetInnerHTML": $hash2(["__html"], {"__html": "<!-- 出来たらデモ(Juman KNP?) -->\n"})})));}, TMP_100.$$s = self, TMP_100.$$arity = 1, TMP_100))
+    }, TMP_Page36_content_101.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page37(){};
     var self = $Page37 = $klass($base, $super, 'Page37', $Page37);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page37_header_106, TMP_Page37_content_108;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page37_header_102, TMP_Page37_content_104;
 
     
     
-    Opal.defn(self, '$header', TMP_Page37_header_106 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page37_header_102 = function $$header() {
       var self = this;
 
-      return self.$h2(nil, "Information")
-    }, TMP_Page37_header_106.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page37_content_108 = function $$content() {
-      var TMP_107, self = this;
+      return self.$h2(nil, "Neural network")
+    }, TMP_Page37_header_102.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page37_content_104 = function $$content() {
+      var TMP_103, self = this;
 
-      return $send([], 'tap', [], (TMP_107 = function(children){var self = TMP_107.$$s || this;
+      return $send([], 'tap', [], (TMP_103 = function(children){var self = TMP_103.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "RedDataWorkshop"), self.$li(nil, "Code room"), self.$li(nil, "RubyKaigi 2019 After Hack by Fukuoka.rb!!")))}, TMP_107.$$s = self, TMP_107.$$arity = 1, TMP_107))
-    }, TMP_Page37_content_108.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Tensor Flow"), self.$li(nil, "MXNet")))}, TMP_103.$$s = self, TMP_103.$$arity = 1, TMP_103))
+    }, TMP_Page37_content_104.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   (function($base, $super, $parent_nesting) {
     function $Page38(){};
     var self = $Page38 = $klass($base, $super, 'Page38', $Page38);
 
-    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page38_header_109, TMP_Page38_content_111;
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page38_header_105, TMP_Page38_content_107;
 
     
     
-    Opal.defn(self, '$header', TMP_Page38_header_109 = function $$header() {
+    Opal.defn(self, '$header', TMP_Page38_header_105 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "bindings")
+    }, TMP_Page38_header_105.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page38_content_107 = function $$content() {
+      var TMP_106, self = this;
+
+      return $send([], 'tap', [], (TMP_106 = function(children){var self = TMP_106.$$s || this;
+if (children == null) children = nil;
+      return children['$<<'](self.$ul(nil, self.$li(nil, "These gems are bindings of native libraries are implemented by C/C++."), self.$li(nil, "It is fast approach.")))}, TMP_106.$$s = self, TMP_106.$$arity = 1, TMP_106))
+    }, TMP_Page38_content_107.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page39(){};
+    var self = $Page39 = $klass($base, $super, 'Page39', $Page39);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page39_header_108, TMP_Page39_content_110;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page39_header_108 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "Red Chainer")
+    }, TMP_Page39_header_108.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page39_content_110 = function $$content() {
+      var TMP_109, self = this;
+
+      return $send([], 'tap', [], (TMP_109 = function(children){var self = TMP_109.$$s || this;
+if (children == null) children = nil;
+      return children['$<<'](self.$ul(nil, self.$li(nil, "A Ruby implementation of Chainer."), self.$ul(nil, self.$li(nil, "Chainer is deep learning framework in Python")), self.$li(nil, "GPU supported. (Cumo)"), self.$li(nil, "@sonots and @hatappi will talk about RedChainer and Cumo on the 3rd day of RubyKaigi2019.")))}, TMP_109.$$s = self, TMP_109.$$arity = 1, TMP_109))
+    }, TMP_Page39_content_110.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page40(){};
+    var self = $Page40 = $klass($base, $super, 'Page40', $Page40);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page40_header_111, TMP_Page40_content_113;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page40_header_111 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "Word2vec and LSTM implementation with RedChainer")
+    }, TMP_Page40_header_111.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page40_content_113 = function $$content() {
+      var TMP_112, self = this;
+
+      return $send([], 'tap', [], (TMP_112 = function(children){var self = TMP_112.$$s || this;
+if (children == null) children = nil;
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/"}), ""))))}, TMP_112.$$s = self, TMP_112.$$arity = 1, TMP_112))
+    }, TMP_Page40_content_113.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page41(){};
+    var self = $Page41 = $klass($base, $super, 'Page41', $Page41);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page41_header_114, TMP_Page41_content_116;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page41_header_114 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "Red Datasets")
+    }, TMP_Page41_header_114.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page41_content_116 = function $$content() {
+      var TMP_115, self = this;
+
+      return $send([], 'tap', [], (TMP_115 = function(children){var self = TMP_115.$$s || this;
+if (children == null) children = nil;
+      return nil}, TMP_115.$$s = self, TMP_115.$$arity = 1, TMP_115))
+    }, TMP_Page41_content_116.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page42(){};
+    var self = $Page42 = $klass($base, $super, 'Page42', $Page42);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page42_header_117, TMP_Page42_content_119;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page42_header_117 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "Demo")
+    }, TMP_Page42_header_117.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page42_content_119 = function $$content() {
+      var TMP_118, self = this;
+
+      return $send([], 'tap', [], (TMP_118 = function(children){var self = TMP_118.$$s || this;
+if (children == null) children = nil;
+      return children['$<<'](self.$p(nil, self.$p($hash2(["class"], {"class": ""}), self.$img($hash2(["src"], {"src": "" + (Opal.const_get_relative($nesting, 'Gibier').$assets_path()) + "/images/demo.png"}), ""))))}, TMP_118.$$s = self, TMP_118.$$arity = 1, TMP_118))
+    }, TMP_Page42_content_119.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page43(){};
+    var self = $Page43 = $klass($base, $super, 'Page43', $Page43);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page43_header_120, TMP_Page43_content_122;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page43_header_120 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "Red Data Tools")
+    }, TMP_Page43_header_120.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page43_content_122 = function $$content() {
+      var TMP_121, self = this;
+
+      return $send([], 'tap', [], (TMP_121 = function(children){var self = TMP_121.$$s || this;
+if (children == null) children = nil;
+      return children['$<<'](self.$ul(nil, self.$li(nil, "Data processing"), self.$li(nil, "Products"), self.$ul(nil, self.$li(nil, self.$strong(nil, "Red Arrow"), ": A Ruby binding of Apache Arrow."), self.$li(nil, self.$strong(nil, "Red Chainer"), ": A Neural Network framework in Ruby."), self.$li(nil, self.$strong(nil, "Red Datasets"), ": Datasets for data processing in Ruby."), self.$li(nil, self.$strong(nil, "Charty"), ": A visualising framework."))))}, TMP_121.$$s = self, TMP_121.$$arity = 1, TMP_121))
+    }, TMP_Page43_content_122.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page44(){};
+    var self = $Page44 = $klass($base, $super, 'Page44', $Page44);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page44_header_123, TMP_Page44_content_125;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page44_header_123 = function $$header() {
+      var self = this;
+
+      return self.$h2(nil, "Information")
+    }, TMP_Page44_header_123.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page44_content_125 = function $$content() {
+      var TMP_124, self = this;
+
+      return $send([], 'tap', [], (TMP_124 = function(children){var self = TMP_124.$$s || this;
+if (children == null) children = nil;
+      return children['$<<'](self.$ul(nil, self.$li(nil, "RedDataWorkshop"), self.$li(nil, "Code room"), self.$li(nil, "RubyKaigi 2019 After Hack by Fukuoka.rb!!")))}, TMP_124.$$s = self, TMP_124.$$arity = 1, TMP_124))
+    }, TMP_Page44_content_125.$$arity = 0), nil) && 'content';
+  })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
+  (function($base, $super, $parent_nesting) {
+    function $Page45(){};
+    var self = $Page45 = $klass($base, $super, 'Page45', $Page45);
+
+    var def = self.$$proto, $nesting = [self].concat($parent_nesting), TMP_Page45_header_126, TMP_Page45_content_128;
+
+    
+    
+    Opal.defn(self, '$header', TMP_Page45_header_126 = function $$header() {
       var self = this;
 
       return self.$h2(nil, "Conclusion")
-    }, TMP_Page38_header_109.$$arity = 0);
-    return (Opal.defn(self, '$content', TMP_Page38_content_111 = function $$content() {
-      var TMP_110, self = this;
+    }, TMP_Page45_header_126.$$arity = 0);
+    return (Opal.defn(self, '$content', TMP_Page45_content_128 = function $$content() {
+      var TMP_127, self = this;
 
-      return $send([], 'tap', [], (TMP_110 = function(children){var self = TMP_110.$$s || this;
+      return $send([], 'tap', [], (TMP_127 = function(children){var self = TMP_127.$$s || this;
 if (children == null) children = nil;
-      return children['$<<'](self.$ul(nil, self.$li(nil, "NLPの基礎としてLanguage Modelについて"), self.$li(nil, "Language ModelはいまやNeural network全盛"), self.$li(nil, "Neural networkのLMの基本形としてLSTMがある"), self.$li(nil, "LSTMをRuby(RedChainer)に実装した")))}, TMP_110.$$s = self, TMP_110.$$arity = 1, TMP_110))
-    }, TMP_Page38_content_111.$$arity = 0), nil) && 'content';
+      return children['$<<'](self.$ul(nil, self.$li(nil, "I introduced NLP."), self.$li(nil, "Language Model is basic thing of NLP."), self.$li(nil, "LSTM is basis of Neural Network Language Model."), self.$li(nil, "I have implemented LSTM on Red Chainer.")))}, TMP_127.$$s = self, TMP_127.$$arity = 1, TMP_127))
+    }, TMP_Page45_content_128.$$arity = 0), nil) && 'content';
   })(Opal.const_get_relative($nesting, 'Gibier'), Opal.const_get_qualified(Opal.const_get_relative($nesting, 'Gibier'), 'PageBase'), $nesting);
   
-  $writer = [39];
+  $writer = [46];
   $send(Opal.const_get_relative($nesting, 'Gibier'), 'page_count=', Opal.to_a($writer));
   $writer[$rb_minus($writer["length"], 1)];;
   
