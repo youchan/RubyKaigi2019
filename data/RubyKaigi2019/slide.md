@@ -12,6 +12,11 @@
 * RubyKaigi speaker (2015 -)
 * Retrieva, Inc.
     * Application developer
+* asakusa.rb
+
+---
+
+![large](asakusarb.png)
 
 ## Sponsored by Retrieva, Inc.
 
@@ -26,13 +31,13 @@
 
 %large: Are japanese web developers thinking that NLP is MeCab?
 
-## Someday at a self-published book fes.
+## Someday at a self-made books fes.
 
 ![portlait-right](neko.jpg)
 
 %left:
 
-**me**: This book is writen about NLP programming in Ruby.
+**me**: This book is written about NLP programming in Ruby.
 
 **customer**: Oh, NLP? It's  MeCab?
 
@@ -71,6 +76,12 @@
 ---
 
 ![full](tokenize.png)
+
+## MeCab
+
+%centering:
+
+![w30](mecab.png)
 
 ---
 
@@ -149,20 +160,14 @@ The current state is depending on only the last state.
 
 ![large](lstm.png)
 
-## Use of Language Model
-
-* encoder-decoder
-
 ## Where latest NLP are using
 
 * Neural Machine Translation
 * Question Answering(Smart speaker, chat bot)
-* Information Retrieval
-* BART
 
 ## Neural machine translation
 
-## BART
+![large](seq2seq.png)
 
 ---
 
@@ -228,9 +233,6 @@ The current state is depending on only the last state.
 
 ![full](demo.png)
 
-## Red Datasets
-
-
 ## Red Data Tools
 
 * Red Data Tools is a project that provides data processing tools for Ruby.
@@ -250,6 +252,10 @@ The current state is depending on only the last state.
   * Ignore criticism from outsiders
   * Fun!
 
+---
+
+%large: We are wating for your help!
+
 ## Information
 
 * RedDataWorkshop: 4/19(Tomorrow!) 14:20 -
@@ -263,3 +269,6 @@ The current state is depending on only the last state.
 * Language Model is basic thing of NLP.
 * LSTM is basis of Neural Network Language Model.
 * I have implemented LSTM on Red Chainer.
+
+---
+
