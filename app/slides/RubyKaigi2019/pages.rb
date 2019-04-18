@@ -38,26 +38,12 @@ end
 
 def content
   [].tap do |children|
-      children << p(nil, p({class:""}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/retrieva.png"}, "")))
   end
 end
 end
 
 class Gibier::Page3 < Gibier::PageBase
-def header
-  h2(nil, "Motivation")
-end
-
-def content
-  [].tap do |children|
-      children << ul(nil,
-                    li(nil, "I am glad to develop NLP by ruby, because")
-      )
-  end
-end
-end
-
-class Gibier::Page4 < Gibier::PageBase
 def header
   h2(nil, "Topic")
 end
@@ -72,7 +58,7 @@ def content
 end
 end
 
-class Gibier::Page5 < Gibier::PageBase
+class Gibier::Page4 < Gibier::PageBase
 def content
   [].tap do |children|
       children << p({className:"large"}, "Are japanese web developers thinking that NLP is MeCab?")
@@ -80,29 +66,22 @@ def content
 end
 end
 
-class Gibier::Page6 < Gibier::PageBase
+class Gibier::Page5 < Gibier::PageBase
 def header
   h2(nil, "Someday at a self-published book fes.")
 end
 
 def content
   [].tap do |children|
+      children << p(nil, p({class:"portlait-right"}, img({src:"#{Gibier.assets_path}/images/neko.jpg"}, "")))
+      children << p({className:"left"}, "")
       children << p(nil, strong(nil, "me"),": This book is writen about NLP programming in Ruby.")
       children << p(nil, strong(nil, "customer"),": Oh, NLP? It's  MeCab?")
-      children << p(nil, p({class:""}, img({src:"#{Gibier.assets_path}/images/neko.png"}, "")))
   end
 end
 end
 
-class Gibier::Page7 < Gibier::PageBase
-def content
-  [].tap do |children|
-      children << p(nil, p({class:"いろいろなNLP"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
-  end
-end
-end
-
-class Gibier::Page8 < Gibier::PageBase
+class Gibier::Page6 < Gibier::PageBase
 def content
   [].tap do |children|
       children << p({className:"huge"}, "What is NLP?")
@@ -110,7 +89,15 @@ def content
 end
 end
 
-class Gibier::Page9 < Gibier::PageBase
+class Gibier::Page7 < Gibier::PageBase
+def content
+  [].tap do |children|
+      children << p(nil, p({class:"full"}, img({src:"#{Gibier.assets_path}/images/nlp.png"}, "")))
+  end
+end
+end
+
+class Gibier::Page8 < Gibier::PageBase
 def header
   h2(nil, "Two trends of NLP")
 end
@@ -125,7 +112,8 @@ def content
       ),
                   li(nil, "Deep learning"),
                   ul(nil,
-                    li(nil, "End-to-end")
+                    li(nil, "End-to-end"),
+                    li(nil, "Gethering data and learn it!")
       )
       )
       children << code({ dangerouslySetInnerHTML: { __html: %q{<!-- 図にしても良いかも -->
@@ -134,7 +122,7 @@ def content
 end
 end
 
-class Gibier::Page10 < Gibier::PageBase
+class Gibier::Page9 < Gibier::PageBase
 def content
   [].tap do |children|
       children << p({className:"large"}, "NLP is analysis of token series.")
@@ -142,16 +130,15 @@ def content
 end
 end
 
-class Gibier::Page11 < Gibier::PageBase
+class Gibier::Page10 < Gibier::PageBase
 def content
   [].tap do |children|
-      children << code({ dangerouslySetInnerHTML: { __html: %q{<!-- トークンを解析するイメージの絵 -->
-} } })
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/sequence.png"}, "")))
   end
 end
 end
 
-class Gibier::Page12 < Gibier::PageBase
+class Gibier::Page11 < Gibier::PageBase
 def header
   h2(nil, "Tokenizing")
 end
@@ -163,15 +150,15 @@ def content
 end
 end
 
-class Gibier::Page13 < Gibier::PageBase
+class Gibier::Page12 < Gibier::PageBase
 def content
   [].tap do |children|
-      children << p(nil, p({class:"日本語のトークナイズ"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"full"}, img({src:"#{Gibier.assets_path}/images/tokenize.png"}, "")))
   end
 end
 end
 
-class Gibier::Page14 < Gibier::PageBase
+class Gibier::Page13 < Gibier::PageBase
 def content
   [].tap do |children|
       children << p({className:"large"}, "Language Model")
@@ -179,7 +166,7 @@ def content
 end
 end
 
-class Gibier::Page15 < Gibier::PageBase
+class Gibier::Page14 < Gibier::PageBase
 def header
   h2(nil, "Language Model")
 end
@@ -192,21 +179,21 @@ def content
                     li(nil, "Occurence probability"),
                     li(nil, "Likelyhood")
       ),
-                    li(nil, "Imagining predictive transformations make it easy understanding.")
+                    li(nil, "Imagining predictive Kana-to-kanji conversion make it easy understanding.")
       )
   end
 end
 end
 
-class Gibier::Page16 < Gibier::PageBase
+class Gibier::Page15 < Gibier::PageBase
 def content
   [].tap do |children|
-      children << p(nil, p({class:"予測変換を例にして言語モデルを説明する図"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p({className:"large"}, "Let's try it!")
   end
 end
 end
 
-class Gibier::Page17 < Gibier::PageBase
+class Gibier::Page16 < Gibier::PageBase
 def header
   h2(nil, "Simple Language Model")
 end
@@ -221,7 +208,7 @@ def content
 end
 end
 
-class Gibier::Page18 < Gibier::PageBase
+class Gibier::Page17 < Gibier::PageBase
 def header
   h2(nil, "Markov property")
 end
@@ -229,24 +216,24 @@ end
 def content
   [].tap do |children|
       children << p(nil, "The current state is depending on only the last state.")
-      children << p(nil, p({class:"Markov property"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/markov-property.png"}, "")))
   end
 end
 end
 
-class Gibier::Page19 < Gibier::PageBase
+class Gibier::Page18 < Gibier::PageBase
 def header
   h2(nil, "n-gram language model")
 end
 
 def content
   [].tap do |children|
-      children << p(nil, p({class:"n-gram language model"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/n-gram.png"}, "")))
   end
 end
 end
 
-class Gibier::Page20 < Gibier::PageBase
+class Gibier::Page19 < Gibier::PageBase
 def header
   h2(nil, "Language models other than n-gram")
 end
@@ -254,19 +241,18 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                  li(nil, "HMM(Hidden markov mdoel)"),
+                    li(nil, "HMM(Hidden markov mdoel)"),
+                  li(nil, "CRF(Conditinal Random Fields)"),
                   ul(nil,
-                    li(nil, "CRF"),
                     li(nil, "Used in MeCab")
       ),
                     li(nil, "Neural network")
       )
-      children << p(nil, p({class:"HMM"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
   end
 end
 end
 
-class Gibier::Page21 < Gibier::PageBase
+class Gibier::Page20 < Gibier::PageBase
 def header
   h2(nil, "Neural Network")
 end
@@ -287,7 +273,7 @@ def content
 end
 end
 
-class Gibier::Page22 < Gibier::PageBase
+class Gibier::Page21 < Gibier::PageBase
 def header
   h2(nil, "Word embedding")
 end
@@ -302,7 +288,7 @@ def content
 end
 end
 
-class Gibier::Page23 < Gibier::PageBase
+class Gibier::Page22 < Gibier::PageBase
 def header
   h2(nil, "one-hot vector")
 end
@@ -314,6 +300,18 @@ def content
 end
 end
 
+class Gibier::Page23 < Gibier::PageBase
+def header
+  h2(nil, "Bag of words")
+end
+
+def content
+  [].tap do |children|
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/bow.png"}, "")))
+  end
+end
+end
+
 class Gibier::Page24 < Gibier::PageBase
 def header
   h2(nil, "word embedding")
@@ -321,7 +319,7 @@ end
 
 def content
   [].tap do |children|
-      children << p(nil, p({class:"次元圧縮のはなし"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/word-embedding.png"}, "")))
       children << code({ dangerouslySetInnerHTML: { __html: %q{<!-- ニューラルネットワークとは行列演算がほとんど -->
 } } })
   end
@@ -335,7 +333,7 @@ end
 
 def content
   [].tap do |children|
-      children << p(nil, p({class:"word2vec"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/word2vec.png"}, "")))
   end
 end
 end
@@ -347,7 +345,7 @@ end
 
 def content
   [].tap do |children|
-      children << p(nil, p({class:"RNN"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/rnn.png"}, "")))
       children << code({ dangerouslySetInnerHTML: { __html: %q{<!-- RNNはn-gramのニューラルネットワーク版みたいなもの -->
 } } })
   end
@@ -361,7 +359,7 @@ end
 
 def content
   [].tap do |children|
-      children << p(nil, p({class:"LSTM"}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p(nil, p({class:"large"}, img({src:"#{Gibier.assets_path}/images/lstm.png"}, "")))
   end
 end
 end
@@ -544,18 +542,30 @@ end
 end
 
 class Gibier::Page40 < Gibier::PageBase
-def header
-  h2(nil, "Word2vec and LSTM implementation with RedChainer")
-end
-
 def content
   [].tap do |children|
-      children << p(nil, p({class:""}, img({src:"#{Gibier.assets_path}/images/"}, "")))
+      children << p({className:"large"}, "I have implemented Word2vec and LSTM with Red Chainer")
   end
 end
 end
 
 class Gibier::Page41 < Gibier::PageBase
+def content
+  [].tap do |children|
+      children << p({className:"huge"}, "Demo")
+  end
+end
+end
+
+class Gibier::Page42 < Gibier::PageBase
+def content
+  [].tap do |children|
+      children << p(nil, p({class:"full"}, img({src:"#{Gibier.assets_path}/images/demo.png"}, "")))
+  end
+end
+end
+
+class Gibier::Page43 < Gibier::PageBase
 def header
   h2(nil, "Red Datasets")
 end
@@ -566,19 +576,7 @@ def content
 end
 end
 
-class Gibier::Page42 < Gibier::PageBase
-def header
-  h2(nil, "Demo")
-end
-
-def content
-  [].tap do |children|
-      children << p(nil, p({class:""}, img({src:"#{Gibier.assets_path}/images/demo.png"}, "")))
-  end
-end
-end
-
-class Gibier::Page43 < Gibier::PageBase
+class Gibier::Page44 < Gibier::PageBase
 def header
   h2(nil, "Red Data Tools")
 end
@@ -586,20 +584,42 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "Data processing"),
+                    li(nil, "Red Data Tools is a project that provides data processing tools for Ruby."),
                   li(nil, "Products"),
                   ul(nil,
-                    li(nil, strong(nil, "Red Arrow"),": A Ruby binding of Apache Arrow."),
-                    li(nil, strong(nil, "Red Chainer"),": A Neural Network framework in Ruby."),
-                    li(nil, strong(nil, "Red Datasets"),": Datasets for data processing in Ruby."),
-                    li(nil, strong(nil, "Charty"),": A visualising framework.")
+                    li(nil, strong(nil, "Red Arrow"),": Ruby binding of Apache Arrow."),
+                    li(nil, strong(nil, "Red Chainer"),": A flexible framework for neural network which ported Python's Chainer with Ruby."),
+                    li(nil, strong(nil, "Red Datasets"),": A RubyGem that provides common datasets."),
+                    li(nil, strong(nil, "Charty"),": Ruby library for visualizing your data in a simple way.")
       )
       )
   end
 end
 end
 
-class Gibier::Page44 < Gibier::PageBase
+class Gibier::Page45 < Gibier::PageBase
+def header
+  h2(nil, "Red Data Tools")
+end
+
+def content
+  [].tap do |children|
+      children << ul(nil,
+                  li(nil, "Policies"),
+                  ul(nil,
+                    li(nil, "Collaborate across the Ruby community"),
+                    li(nil, "Acting rather than blaming"),
+                    li(nil, "Continuous, iterative progress rather than a short, big project"),
+                    li(nil, "The current lack of knowledge doesn't matter"),
+                    li(nil, "Ignore criticism from outsiders"),
+                    li(nil, "Fun!")
+      )
+      )
+  end
+end
+end
+
+class Gibier::Page46 < Gibier::PageBase
 def header
   h2(nil, "Information")
 end
@@ -607,15 +627,18 @@ end
 def content
   [].tap do |children|
       children << ul(nil,
-                    li(nil, "RedDataWorkshop"),
-                    li(nil, "Code room"),
-                    li(nil, "RubyKaigi 2019 After Hack by Fukuoka.rb!!")
+                    li(nil, "RedDataWorkshop: 4/19(Tomorrow!) 14:20 -"),
+                    li(nil, "Code room:"),
+                  li(nil, "RubyKaigi 2019 After Hack by Fukuoka.rb!!: 4/21 10:30 -"),
+                  ul(nil,
+                    li(nil, "See ",a({href:"https://fukuokarb.connpass.com/event/124406/", target:"_blank"}, "connpass"),".")
+      )
       )
   end
 end
 end
 
-class Gibier::Page45 < Gibier::PageBase
+class Gibier::Page47 < Gibier::PageBase
 def header
   h2(nil, "Conclusion")
 end
@@ -632,5 +655,5 @@ def content
 end
 end
 
-Gibier.page_count = 46
+Gibier.page_count = 48
 Gibier.title = "Ruby for NLP"

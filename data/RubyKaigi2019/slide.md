@@ -15,11 +15,7 @@
 
 ## Sponsored by Retrieva, Inc.
 
-![]()
-
-## Motivation
-
-* I am glad to develop NLP by ruby, because 
+![large](retrieva.png)
 
 ## Topic
 
@@ -32,19 +28,22 @@
 
 ## Someday at a self-published book fes.
 
+![portlait-right](neko.jpg)
+
+%left:
+
 **me**: This book is writen about NLP programming in Ruby.
 
 **customer**: Oh, NLP? It's  MeCab?
 
-![](neko.png)
-
----
-
-![いろいろなNLP]()
-
 ---
 
 %huge: What is NLP?
+
+---
+
+![full](nlp.png)
+
 
 ## Two trends of NLP
 
@@ -53,6 +52,7 @@
   - Classical
 * Deep learning
   - End-to-end
+  - Gethering data and learn it!
 
 <!-- 図にしても良いかも -->
 
@@ -62,7 +62,7 @@
 
 ---
 
-<!-- トークンを解析するイメージの絵 -->
+![large](sequence.png)
 
 ## Tokenizing
 
@@ -70,7 +70,7 @@
 
 ---
 
-![日本語のトークナイズ]()
+![full](tokenize.png)
 
 ---
 
@@ -81,11 +81,11 @@
 * Probabilistic approach
   * Occurence probability
   * Likelyhood
-* Imagining predictive transformations make it easy understanding.
+* Imagining predictive Kana-to-kanji conversion make it easy understanding.
 
 ---
 
-![予測変換を例にして言語モデルを説明する図]()
+%large: Let's try it!
 
 ## Simple Language Model
 
@@ -96,20 +96,18 @@
 
 The current state is depending on only the last state.
 
-![Markov property]()
+![large](markov-property.png)
 
 ## n-gram language model
 
-![n-gram language model]()
+![large](n-gram.png)
 
 ## Language models other than n-gram
 
 * HMM(Hidden markov mdoel)
-    * CRF
-    * Used in MeCab
+* CRF(Conditinal Random Fields)
+  * Used in MeCab
 * Neural network
-
-![HMM]()
 
 ## Neural Network
 
@@ -127,25 +125,29 @@ The current state is depending on only the last state.
 
 ![large](one-hot-vector.png)
 
+## Bag of words
+
+![large](bow.png)
+
 ## word embedding
 
-![次元圧縮のはなし]()
+![large](word-embedding.png)
 
 <!-- ニューラルネットワークとは行列演算がほとんど -->
 
 ## word2vec
 
-![word2vec]()
+![large](word2vec.png)
 
 ## Recurent neural network (RNN)
 
-![RNN]()
+![large](rnn.png)
 
 <!-- RNNはn-gramのニューラルネットワーク版みたいなもの -->
 
 ## Long short term memory (LSTM)
 
-![LSTM]()
+![large](lstm.png)
 
 ## Use of Language Model
 
@@ -214,30 +216,46 @@ The current state is depending on only the last state.
 * GPU supported. (Cumo)
 * @sonots and @hatappi will talk about RedChainer and Cumo on the 3rd day of RubyKaigi2019.
 
-## Word2vec and LSTM implementation with RedChainer
+---
 
-![]()
+%large: I have implemented Word2vec and LSTM with Red Chainer
+
+---
+
+%huge: Demo
+
+---
+
+![full](demo.png)
 
 ## Red Datasets
 
-## Demo
-
-![](demo.png)
 
 ## Red Data Tools
 
-* Data processing
+* Red Data Tools is a project that provides data processing tools for Ruby.
 * Products
-  * **Red Arrow**: A Ruby binding of Apache Arrow.
-  * **Red Chainer**: A Neural Network framework in Ruby.
-  * **Red Datasets**: Datasets for data processing in Ruby.
-  * **Charty**: A visualising framework.
+  * **Red Arrow**: Ruby binding of Apache Arrow.
+  * **Red Chainer**: A flexible framework for neural network which ported Python's Chainer with Ruby.
+  * **Red Datasets**: A RubyGem that provides common datasets.
+  * **Charty**: Ruby library for visualizing your data in a simple way.
+
+## Red Data Tools
+
+* Policies
+  * Collaborate across the Ruby community
+  * Acting rather than blaming
+  * Continuous, iterative progress rather than a short, big project
+  * The current lack of knowledge doesn't matter
+  * Ignore criticism from outsiders
+  * Fun!
 
 ## Information
 
-* RedDataWorkshop
-* Code room
-* RubyKaigi 2019 After Hack by Fukuoka.rb!!
+* RedDataWorkshop: 4/19(Tomorrow!) 14:20 -
+* Code room:
+* RubyKaigi 2019 After Hack by Fukuoka.rb!!: 4/21 10:30 -
+  * See [connpass](https://fukuokarb.connpass.com/event/124406/).
 
 ## Conclusion
 
