@@ -194,6 +194,12 @@ The current state is depending on only the last state.
 
 <!-- Nattoでデモ -->
 
+---
+
+* 我輩は猫である
+* すもももももももものうち
+
+
 <!-- 出来たらJuman++でもデモ -->
 
 ## Parsing
@@ -265,10 +271,11 @@ The current state is depending on only the last state.
 
 ## Conclusion
 
-* I introduced NLP.
-* Language Model is basic thing of NLP.
-* LSTM is basis of Neural Network Language Model.
-* I have implemented LSTM on Red Chainer.
+* I have introduced NLP.
+* I implemented LSTM on Red Chainer.
+* We have a lot of work to do about Ruby NLP.
 
 ---
+
+%large: We are wating for your help!
 

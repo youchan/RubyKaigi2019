@@ -1,8 +1,12 @@
 .gibier .page_0 p.icon {
   margin: 0;
   position: relative;
-  left: 32em;
-  top: -3em;
+  left: 27em;
+  top: -4em;
+}
+
+.gibier .background {
+  background-color: #1F1448;
 }
 
 .gibier .page-header {
@@ -12,5 +16,7 @@
 .gibier .page-container {
   border-top: solid 64px #1F1448;
   border-bottom: solid 36px #1F1448;
+  background-color: #ffffff;
   box-sizing:border-box;
 }
+
