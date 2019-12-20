@@ -1,21 +1,21 @@
 GIT
-  remote: git://github.com/adambeynon/opal-router.git
+  remote: https://github.com/adambeynon/opal-router.git
   revision: bc8c242510794ecbb842b52423732f2ec55c2a1e
   specs:
     opal-router (0.0.1)
       opal (>= 0.3.44)
 
 GIT
-  remote: git://github.com/opal/opal-haml.git
-  revision: dd4bb76581c54e154fcc11a00b48d2de8a83e64f
+  remote: https://github.com/opal/opal-haml.git
+  revision: 3f25d39ce9063ee9df0d72d58777a2bfee9452ce
   specs:
-    opal-haml (0.4.5)
+    opal-haml (0.4.6)
       haml
-      opal (~> 0.10, < 0.12)
+      opal (>= 0.10, < 2)
       opal-sprockets (~> 0.4.1)
 
 GIT
-  remote: git://github.com/youchan/opal-websocket.git
+  remote: https://github.com/youchan/opal-websocket.git
   revision: 03dc38d26de66cc6a0ec329c7546735949f292bd
   specs:
     opal-websocket (0.1.0)
@@ -69,7 +69,7 @@ GEM
     parser (2.3.3.1)
       ast (~> 2.2)
     public_suffix (3.0.3)
-    rack (1.6.11)
+    rack (1.6.12)
     rack-protection (1.5.5)
       rack
     rack-test (1.1.0)
